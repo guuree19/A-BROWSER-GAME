@@ -1,4 +1,10 @@
 body{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
 
     background-color: rgb(223, 223, 235);
 }
@@ -6,29 +12,38 @@ body{
 .container{
 
 background-color: rgb(6, 139, 95);
-height: 450px;
-width: 450px;
+height: 546px;
+width: 546px;
 align-items: center;
 position: relative;
 left: 330px;
 top: 300px;
-display: flex;
 
 }
-#btn_Start, #btn_next{
-    width: 40px;
+#btn_Start{
+    width: 82px;
     height: 40px;
     background-color: rgb(246, 244, 250);
-    text-shadow: 3em;
+    text-shadow: 1em;
     padding: 2em;
+    position: relative;
+    top: 115px;
+    right: 237px;
+    text-align: center;
+    background-color: rgb(172, 182, 35);
+
     
 }
 #question{
     background-color: rgb(158, 153, 83);
     border: 2em;
-    text-shadow: 3em;
-    width: 60%;
-    height: 30%;
+    width: 440px;
+    height: 340px;
     position: relative;
-    left: 50px;
+    left: 10px;
+    top: 87px;
+    float: none;
+    display: inline-block;
+    margin: 3em;
+    
 }
