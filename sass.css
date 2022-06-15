@@ -29,7 +29,7 @@ body{
 #scoreCard{
     background-color: rgb(3, 105, 71);
     position: relative;
-    left: 40px;
+    left: 4px;
     width: 50px;
     height: 54px;
     
@@ -91,4 +91,47 @@ top: 300px;
     display: inline-block;
     margin: 3em;
     
+}
+
+
+
+
+
+@media (max-width: 320px) {  
+    
+    #quiz-wraper{
+        background-color: rgb(158, 153, 83);
+        border: 2em;
+        width: 70%;
+        height: 80%;
+        position: relative;
+        left: 10px;
+        top: 87px;
+        float: none;
+        display: block;
+        margin: 3em;
+        
+    }
+
+    *{
+        border:0px;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .container{
+
+        background-color: rgb(4, 58, 40);
+        height: 546px;
+        width: 546px;
+        align-items: center;
+        position: relative;
+        left: 330px;
+        top: 300px;
+        display: flex;
+
+
+    }
+
+
 }
