@@ -18,25 +18,28 @@ checking if the answers are right
 -->
  <div class="container">
     <div id="quiz-wraper">
-        
-            <H1>quize App:</H1>
-            <span  >What is the product of</span>
-            <span id="question"></span>
+        <H1>quize App:</H1>
 
-            <br>
-            <span >user answer:</span>
-            <span id="user-answer"></span>
-            <br>
-            <br>
-            <div id="buttons">
-                <button id="btn_Start"> Start quize</button><br><br>
-                <button id="btn_next"> Next</button><br><br> 
-                <div id="score-card">Score:<span id="scoreCard">0</span></div>
-            </div>
+        <div id= "parent-question">   
+                <span  >What is the product of</span>
+                <span id="question"></span>
+                <br>
+                <span >user answer:</span>
+                <input type="text" id="user-answer" onfocus="this.value=''"
+
+                 min="10" max="100">
+
+                <br>
+                <br>
+                
+        </div>
         
-  </div>
-    
-    
+        <div id="buttons">
+            <button id="btn_Start"> Start quize</button><br><br>
+            <button id="btn_next"> Next</button><br><br> 
+            <div id="score-card">Score:<span id="scoreCard">0</span></div>
+        </div>
+    </div>
 </div>
 
     <script src="script.js"></script>

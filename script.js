@@ -2,54 +2,66 @@
 
 
 
-let multiplier = Math.floor((Math.random() * 10) + 1);
-let multiplicant = Math.floor((Math.random() * 10) + 1);
-let answer = multiplier * multiplicant
 
 
 
 let quizwraper = document.getElementById("quiz-wraper")
-let questiontwo = document.getElementById("questiontwo");
+let question = document.getElementById("question")
+let questiontwo = document.getElementById("parent-question");
 let buttonnext = document.getElementById("btn_next")
 let buttonstart = document.getElementById("btn_Start")
 let buttonscore = document.getElementById("score-card")
+let useranswer = document.getElementById("user-answer");
+askquestion()
+
+function askquestion(){
+let multiplier = Math.floor((Math.random() * 10) + 1);
+let multiplicant = Math.floor((Math.random() * 10) + 1);
+let storeanswer = multiplier * multiplicant
+buttonstart.style.background = "blue"
+questiontwo.style.display = "none"
+buttonstart.style.display = "block"
+question.textContent = `${multiplier} X ${multiplicant}  ?`
 let askquestions = document.getElementById("user-answer");
+useranswer.textContent = 0 
+console.log(useranswer.textContent)
+
+}
 
 
-
+function nextquestion(){
+     
+askquestion()
+}
 const count = 0
 function time_table_practice_or_quize(){ 
-    buttonstart.style.backgroundColor = "blue"
-    let question = document.getElementById("question")
-    question.textContent = `${multiplier} X ${multiplicant}  ?`
-    let askquestions = document.getElementById("user-answer");
-    askquestions.textContent = `${answer}`;
+    buttonnext.addEventListener('click', nextquestion)
+
 
 
     time_table_practice_checking();
     
 }
 
-time_table_practice_or_quize();
+               time_table_practice_or_quize();
+
+
 
      // checking function
     
     function time_table_practice_checking(){
-        
-        if(question === answer && question === user-answer){
-            askquestions.innerHTML = "correct" 
-
-
-        }
-        else{
-            askquestions.innerHTML = "try again" }
+        buttonstart.addEventListener('click', () =>{
+            questiontwo.style.display = "block"
 
             
-
-
-    };
-
+            buttonnext.addEventListener('click', () =>{
+            questiontwo.style.display = "block"
 
 
 
 
+            })
+        })
+
+    }
+     
