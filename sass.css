@@ -28,7 +28,35 @@ body{
 
 #scoreCard{
     background-color: rgb(3, 105, 71);
+    position: relative;
+    left: 40px;
+    width: 50px;
+    height: 54px;
     
+
+}
+
+#score-card{
+
+    position: relative;
+    top: 30px;
+    left: 44px;
+    bottom: 50px;
+    text-transform: uppercase;
+}
+#btn_next{
+    position: relative;
+    left: 210px;
+    top: 66px;
+    text-transform: uppercase;
+}
+
+#btn_Start{
+    position: relative;
+    top: 123px;
+    right: 0px;
+    text-align: center;
+    text-transform: uppercase;
 
 }
 
@@ -49,13 +77,6 @@ top: 300px;
     background-color: rgb(246, 244, 250);
     text-shadow: 1em;
     padding: 2em;
-    position: relative;
-    top: 115px;
-    right: 237px;
-    text-align: center;
-    text-transform: uppercase;
-    
-
     
 }
 #quiz-wraper{
