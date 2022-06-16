@@ -11,6 +11,7 @@ let questiontwo = document.getElementById("parent-question");
 let buttonnext = document.getElementById("btn_next")
 let buttonstart = document.getElementById("btn_Start")
 let buttonscore = document.getElementById("score-card")
+let scorecard = document.getElementById("scoreCard")
 let useranswer = document.getElementById("user-answer");
 askquestion()
 
@@ -25,6 +26,7 @@ question.textContent = `${multiplier} X ${multiplicant}  ?`
 let askquestions = document.getElementById("user-answer");
 useranswer.textContent = 0 
 console.log(useranswer.textContent)
+
 
 }
 
@@ -61,7 +63,16 @@ function time_table_practice_or_quize(){
 
 
             })
+
+            
+                
+
+
+
+            
         })
 
     }
+
+    $('body').css("background-color", "black");
      

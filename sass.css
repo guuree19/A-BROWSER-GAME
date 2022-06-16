@@ -49,6 +49,7 @@ body{
     left: 210px;
     top: 66px;
     text-transform: uppercase;
+    cursor: pointer;
 }
 
 #btn_Start{
@@ -57,6 +58,8 @@ body{
     right: 0px;
     text-align: center;
     text-transform: uppercase;
+    cursor: pointer;
+
 
 }
 
