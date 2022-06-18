@@ -39,20 +39,26 @@ body{
 #score-card{
 
     position: relative;
-    top: 30px;
-    left: 44px;
+    top: 16px;
+    left: 94px;
     bottom: 50px;
     text-transform: uppercase;
 }
 #btn_next{
+    width: 82px;
+    height: 40px;
+    text-shadow: 1em;
     position: relative;
-    left: 210px;
-    top: 66px;
+    left: 10px;
+    top: 47px;
     text-transform: uppercase;
     cursor: pointer;
 }
 
 #btn_Start{
+    width: 82px;
+    height: 40px;
+    text-shadow: 1em;
     position: relative;
     top: 123px;
     right: 0px;
