@@ -5,7 +5,8 @@ body{
     height: 100vh;
     justify-content: center;
     align-items: center;
-
+    overflow-y: hidden; 
+    overflow-x: hidden; 
     background-color: rgb(223, 223, 235);
 }
 
@@ -114,7 +115,7 @@ top: 300px;
     background-color: rgb(158, 153, 83);
     border: 2em;
     width: 440px;
-    height: 350px;
+    height: 390px;
     position: relative;
     left: 10px;
     top: 87px;
