@@ -13,9 +13,12 @@ let buttonstart = document.getElementById("btn_Start")
 let buttonscore = document.getElementById("score-card")
 let scorecard = document.getElementById("scoreCard")
 let useranswer = document.getElementById("user-answer");
+let  count = 0
+
 askquestion()
 
 function askquestion(){
+
 let multiplier = Math.floor((Math.random() * 10) + 1);
 let multiplicant = Math.floor((Math.random() * 10) + 1);
 let storeanswer = multiplier * multiplicant
@@ -27,6 +30,14 @@ let askquestions = document.getElementById("user-answer");
 useranswer.textContent = 0 
 console.log(useranswer.textContent)
 
+buttonnext.addEventListener('click', ()=> {
+    
+    count += 5;
+    scorecard.textContent = count;
+
+})
+
+
 
 }
 
@@ -35,9 +46,9 @@ function nextquestion(){
      
 askquestion()
 }
-const count = 0
 function time_table_practice_or_quize(){ 
     buttonnext.addEventListener('click', nextquestion)
+    
 
 
 
