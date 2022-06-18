@@ -9,7 +9,20 @@ let scorecard = document.getElementById("scoreCard")
 let useranswer = document.getElementById("user-answer");
 let  count = 0
 
-askquestion()
+buttonnext.addEventListener('click', ()=> {
+
+    count += 5;
+    scorecard.textContent = count;
+
+    if(count === 35){
+        questiontwo.style.display= "block"
+        buttonstart.style.display = "block"
+        question.style.display = "block"
+        quizwraper.textContent = "congratulation ,your Score is: 35" 
+
+    }
+   })
+
 
 function askquestion(){
 
@@ -22,21 +35,17 @@ function askquestion(){
     question.textContent = `${multiplier} X ${multiplicant}  ?`
     let askquestions = document.getElementById("user-answer");
     useranswer.textContent = 0 
-    console.log(useranswer.textContent)
+    // /console.log(useranswer.textContent)
 
-    buttonnext.addEventListener('click', ()=> {
-
-    count += 5;
-    scorecard.textContent = count;
-
-    })
 
 }
 
+askquestion();
+
 
 function nextquestion(){
-     
     askquestion()
+    console.log("count " + count)
 }
 
 

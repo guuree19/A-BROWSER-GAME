@@ -5,7 +5,6 @@ body{
     height: 100vh;
     justify-content: center;
     align-items: center;
-    overflow-y: hidden; 
     overflow-x: hidden; 
     background-color: rgb(223, 223, 235);
 }
@@ -58,7 +57,7 @@ h1{position: relative;
 
     position: relative;
     top: 16px;
-    left: 94px;
+    left: 124px;
     bottom: 50px;
     text-transform: uppercase;
 }
@@ -67,7 +66,7 @@ h1{position: relative;
     height: 40px;
     text-shadow: 1em;
     position: relative;
-    left: 10px;
+    left: 16px;
     top: 47px;
     text-transform: uppercase;
     cursor: pointer;
@@ -76,10 +75,9 @@ h1{position: relative;
 #btn_Start{
     width: 82px;
     height: 40px;
-    text-shadow: 1em;
     position: relative;
     top: 123px;
-    right: 0px;
+    left: 6px;
     text-align: center;
     text-transform: uppercase;
     cursor: pointer;
@@ -87,9 +85,7 @@ h1{position: relative;
 
 }
 
-.container:hover {
-    transform: scale(1.25); /* (125%  */
-  }
+
   
 
 .container{
@@ -129,12 +125,10 @@ top: 300px;
 
 
 
-@media (max-width: 320px) {  
+@media screen and (max-width: 320px) {  
 
 
-    .container:hover {
-        transform: scale(0.5); /* (125%  */
-      }
+   
     
     #quiz-wraper{
         background-color: rgb(158, 153, 83);
