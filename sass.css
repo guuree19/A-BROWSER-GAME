@@ -130,6 +130,11 @@ top: 300px;
 
 
 @media (max-width: 320px) {  
+
+
+    .container:hover {
+        transform: scale(0.5); /* (125%  */
+      }
     
     #quiz-wraper{
         background-color: rgb(158, 153, 83);
