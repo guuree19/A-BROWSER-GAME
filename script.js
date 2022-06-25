@@ -1,77 +1,90 @@
 
-let quizwraper = document.getElementById("quiz-wraper")
+let quizWraper = document.getElementById("quiz-wraper")
 let question = document.getElementById("question")
-let questiontwo = document.getElementById("parent-question");
-let buttonnext = document.getElementById("btn_next")
-let buttonstart = document.getElementById("btn_Start")
-let buttonscore = document.getElementById("score-card")
-let scorecard = document.getElementById("scoreCard")
-let useranswer = document.getElementById("user-answer");
+let questionTwo = document.getElementById("parent-question");
+let buttonNext = document.getElementById("btn_next")
+let buttonStart = document.getElementById("btn_Start")
+let buttonScore = document.getElementById("score-card")
+let scoreCard = document.getElementById("scoreCard")
+let userAnswer = document.getElementById("user-answer");
 let  count = 0
 
-buttonnext.addEventListener('click', ()=> {
 
-    count += 5;
-    scorecard.textContent = count;
-
-    if(count === 35){
-        questiontwo.style.display= "block"
-        buttonstart.style.display = "block"
-        question.style.display = "block"
-        quizwraper.textContent = "congratulation ,your Score is: 35" 
-
-    }
-   })
-
-
-function askquestion(){
-
+askQuestion(); 
+function askQuestion(){   
     let multiplier = Math.floor((Math.random() * 10) + 1);
     let multiplicant = Math.floor((Math.random() * 10) + 1);
-    let storeanswer = multiplier * multiplicant
-    buttonstart.style.background = "blue"
-    questiontwo.style.display = "none"
-    buttonstart.style.display = "block"
+    buttonStart.style.background = "blue"
+    questionTwo.style.display = "none"
+    buttonNext.style.display = "block"
+    scoreCard.style.display = "block"
+    buttonScore.style.display = "block"
+    buttonStart.style.display = "block"
+    buttonNext.style.display = "none"
     question.textContent = `${multiplier} X ${multiplicant}  ?`
-    let askquestions = document.getElementById("user-answer");
-    useranswer.textContent = 0 
-    // /console.log(useranswer.textContent)
+    let storedAnswer = multiplier * multiplicant;
 
+    document.getElementById("Btn_submit").onclick = function(){ 
+        let userAnswer = document.getElementById("user_answer").value;
+        if(userAnswer == storedAnswer)
+        {   console.log("user answer is" + " " + userAnswer)
+            console.log("user answer is correct!" )
+            count += 5;
+            scoreCard.textContent = count;
+        } else
+        {console.log("please try again")
+        count -= 1;
+        scoreCard.textContent = count;
+        }
+    }
+}
+
+function nextQuestion()
+{    buttonNext.addEventListener('click', nextQuestion)
+    {  
+
+        question.style.display = "block"
+        buttonStart.style.display = "none"
+        questionTwo.style.display = "block"
+        scoreCard.style.display = "block"
+        buttonScore.style.display = "block"
+        buttonNext.style.display = "block"
+    }
+
+    askQuestion(); 
+ 
 
 }
 
-askquestion();
+nextQuestion();
 
 
-function nextquestion(){
-    askquestion()
-    console.log("count " + count)
-}
-
-
-function time_table_practice_or_quize(){ 
-    buttonnext.addEventListener('click', nextquestion)
-    
+function time_table_practice_or_quize()
+{ 
     time_table_practice_checking();
     
 }
 
 time_table_practice_or_quize();
 
+function time_table_practice_checking()
+{
+    buttonStart.addEventListener('click', () =>{
+        questionTwo.style.display = "block"
+        buttonNext.style.display = "block"
+        buttonStart.style.display = "none"
+    })
 
-// checking function
-    
-    function time_table_practice_checking(){
-        buttonstart.addEventListener('click', () =>{
-            questiontwo.style.display = "block"
+    buttonNext.addEventListener('click', () =>{
+        questionTwo.style.display = "block"
+        buttonStart.style.display = "none"
+    })
 
-            
-            buttonnext.addEventListener('click', () =>{
-            questiontwo.style.display = "block"
-            })
 
-        })
-    }
+   
+}
 
-    $('body').css("background-color", "white");
-     
+$('body').css("background-color", "white");
+
+
+askQuestion(); 

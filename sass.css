@@ -44,11 +44,13 @@ h1{position: relative;
 }
 
 #scoreCard{
-    background-color: rgb(3, 105, 71);
+    background-color: rgb(242, 247, 245);
     position: relative;
-    left: 4px;
-    width: 50px;
-    height: 54px;
+    left: 162px;
+    top: -30px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
     
 
 }
@@ -66,8 +68,8 @@ h1{position: relative;
     height: 40px;
     text-shadow: 1em;
     position: relative;
-    left: 16px;
-    top: 47px;
+    left: 7px;
+    top: 64px;
     text-transform: uppercase;
     cursor: pointer;
 }
