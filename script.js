@@ -1,12 +1,12 @@
 
-let quizWraper = document.getElementById("quiz-wraper")
+let quizWraper = document.getElementById("quiz_wraper")
 let question = document.getElementById("question")
-let questionTwo = document.getElementById("parent-question");
+let questionTwo = document.getElementById("parent_question");
 let buttonNext = document.getElementById("btn_next")
 let buttonStart = document.getElementById("btn_Start")
-let buttonScore = document.getElementById("score-card")
+let buttonScore = document.getElementById("score_card")
 let scoreCard = document.getElementById("scoreCard")
-let userAnswer = document.getElementById("user-answer");
+let userAnswer = document.getElementById("user_answer");
 let  count = 0
 
 
