@@ -9,7 +9,7 @@ body{
     background-color: rgb(223, 223, 235);
 }
 
-#parent-question{
+#parent_question{
 position: relative;
 left: 32px;
 top: 62px;
@@ -55,7 +55,7 @@ h1{position: relative;
 
 }
 
-#score-card{
+#score_card{
 
     position: relative;
     top: 16px;
@@ -63,7 +63,7 @@ h1{position: relative;
     bottom: 50px;
     text-transform: uppercase;
 }
-#btn_next{
+#btn_next #Btn_submit{
     width: 82px;
     height: 40px;
     text-shadow: 1em;
@@ -101,7 +101,7 @@ left: 330px;
 top: 300px;
 
 }
-#btn_Start #btn_next #score-card{
+#btn_Start #btn_next #score_card{
     width: 82px;
     height: 40px;
     background-color: rgb(246, 244, 250);
@@ -109,7 +109,7 @@ top: 300px;
     padding: 2em;
     
 }
-#quiz-wraper{
+#quiz_wraper{
     background-color: rgb(158, 153, 83);
     border: 2em;
     width: 440px;
@@ -132,7 +132,7 @@ top: 300px;
 
    
     
-    #quiz-wraper{
+    #quiz_wraper{
         background-color: rgb(158, 153, 83);
         border: 2em;
         width: 70%;

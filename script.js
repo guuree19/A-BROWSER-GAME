@@ -51,9 +51,8 @@ function nextQuestion()
         buttonNext.style.display = "block"
     }
 
-    askQuestion(); 
  
-
+askQuestion();
 }
 
 nextQuestion();
