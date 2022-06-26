@@ -51,8 +51,7 @@ function nextQuestion()
         buttonNext.style.display = "block"
     }
 
- 
-askQuestion();
+    askQuestion();
 }
 
 nextQuestion();
@@ -77,6 +76,7 @@ function time_table_practice_checking()
     buttonNext.addEventListener('click', () =>{
         questionTwo.style.display = "block"
         buttonStart.style.display = "none"
+        buttonNext.style.display = "block"
     })
 
 
