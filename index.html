@@ -5,44 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A BROWSER GAME</title>
-    <link rel="stylesheet" href="sass.css">
+    <link rel="stylesheet" href="./scss/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
 </head>
 <body>
-<!-- 
-#time table practice or quize
-requirements
-generate random numbers
-Asking user to answer the questions
-keep asking until 9 questions correctly answered in a row
-checking if the answers are right
--->
- <div class="container">
-    <div id="quiz_wraper">
-        <H1>quize App:</H1>
-
-        <div id= "parent_question">   
+    <Ul class="ulitems">
+        <LI><a href="index.html">Home</a></LI>
+        <LI><a href="About.html">about</a></LI>
+        <LI><a href="Activities.html">activities</a></LI>
+    </Ul>
+    <div class="container">
+        <div id="quiz_wraper">
+            <H1>quize App:</H1>
+            <div id= "parent_question">   
                 <span  >What is the product of</span>
                 <span id="question"></span>
                 <br>
                 <label >enter your answer:</label><br>
                 <input type="text" id="user_answer" onfocus="this.value= '' " min="10" max="100">
                 <button id="Btn_submit">submit</button>
-
                 <br>
-                <br>
-                
-        </div>
-        
-        <div id="buttons">
-            <button id="btn_Start"> Start quize</button><br><br>
-            <button id="btn_next" > Next</button><br><br> 
-            <div id="score_card">Score:<span id="scoreCard">0</span></div>
+                <br>     
+            </div>
+            <div id="buttons">
+                <button id="btn_Start"> Start quize</button><br><br>
+                <button id="btn_next" > Next</button><br><br> 
+                <div id="score_card">Score:<span id="scoreCard">0</span></div>
+            </div>
         </div>
     </div>
-</div>
-
     <script src="script.js"></script>
 </body>
 </html>

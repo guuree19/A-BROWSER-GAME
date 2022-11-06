@@ -1,0 +1,79 @@
+// sass mixins
+@mixin ul-t {
+    text-decoration: none;
+    margin: 0.5em;
+    position: relative;
+    top: 30px;
+    
+}
+@mixin parents-question {
+    position: relative;
+    left: 32px;
+    top: 62px;
+    font-size: medium;
+    
+}
+
+@mixin btn-start {
+    width: 82px;
+    height: 40px;
+    position: relative;
+    top: 123px;
+    left: 6px;
+    text-align: center;
+    text-transform: $text-transform;
+    cursor: pointer; 
+}
+@mixin Other-btns {
+    width: 82px;
+    height: 40px;
+    background-color: $b-g-c;
+    text-shadow: 1em;
+    padding: 2em;   
+}
+@mixin btns-2 {
+    text-decoration: none;
+    color: #000;
+    text-transform: $text-transform;
+    align-items: right;
+    display: inline-block;
+    font: $font-s;
+    
+}
+@mixin scor-card {
+    position: relative;
+    left: 162px;
+    top: -30px;
+    width: 30px;
+    height: 30px;
+    text-align: $align-i;  
+}
+@mixin scor-card2 {
+    position: relative;
+    top: 16px;
+    left: 124px;
+    bottom: 50px;
+    text-transform: uppercase;
+    
+}
+
+@mixin submitBtn {
+    width: 82px;
+    height: 40px;
+    text-shadow: 1em;
+    position: relative;
+    left: 7px;
+    top: 64px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+@mixin buttons {
+    display: inline-block;
+    width: 100%;
+    height: 110px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 2em;
+    
+}
+    

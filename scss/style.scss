@@ -1,0 +1,104 @@
+
+@import "./variable";
+@import "./bodyStyle";
+@import "./ulitem";
+@import "./functions";
+
+* {    
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body{
+    margin: $margin;
+    padding: $padding;
+    width: $width;
+    height: $height;
+    justify-content: $justify-c;
+    align-items: $align-i;
+    overflow-x: $overflow-x; 
+    background-color: $body-backgd-color;
+}
+
+#parent_question{
+    @include parents-question;
+}
+
+h1{position: relative;
+    left: 24px;
+    top: -4px;
+    font-size: 34px;
+}
+
+#buttons{
+    @include buttons;  
+}
+
+#buttons,span, #scoreCard {
+    width: 250px;
+    height: 40px;    
+}
+
+.ulitems{
+    background-color: $scoreCard-bg-color;
+    width: 100%;
+    height: 20%;
+    text-align: $align-i;
+    justify-content: $justify-c;
+}
+
+#scoreCard{
+    @include scor-card;
+    background-color: $scoreCard-bg-color;
+    
+}
+
+#score_card{
+    @include scor-card2;
+}
+
+#btn_next #Btn_submit{
+    @include submitBtn;
+}
+
+// scss Nesting
+ul{
+    li{
+        @include btns-2;
+    }
+
+    a{
+        @include ul-t;
+    }
+}
+
+#btn_Start{
+    @include btn-start;
+}
+
+.container{
+    @include Game;
+    background-color: $backg-color;
+}
+
+#btn_Start #btn_next #score_card{
+    @include Other-btns;   
+}
+
+#quiz_wraper{
+    @include Quize-wrap;
+    background-color: $quiz-wraper-bg-color;     
+}
+
+
+@media screen and (max-width: 320px){  
+    #quiz_wraper{
+        @include Quize-wrap;   
+        background-color: $quiz-wraper-bg-color;
+    }
+    .container{
+        @include container-s;
+        background-color: $backg-color;    
+    }
+}

@@ -1,0 +1,37 @@
+// Sass feature  (mixins)
+@mixin Game {
+height: 546px;
+width: 546px;
+align-items: center;
+position: relative;
+left: 330px;
+top: 25px; 
+}
+
+@mixin container-s {
+    height: 546px;
+    width: 546px;
+    align-items: center;
+    position: relative;
+    left: 330px;
+    top: 300px;
+    display: flex;
+    
+}
+
+@mixin Quize-wrap {
+    border: 2em;
+    width: 440px;
+    height: 390px;
+    position: relative;
+    left: 10px;
+    top: 87px;
+    float: none;
+    display: inline-block;
+    margin: 3em;  
+}
+
+// sass functions
+@function Browser(){
+
+}
