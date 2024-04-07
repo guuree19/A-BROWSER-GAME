@@ -9,31 +9,31 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 <body>
-    <Ul class="ulitems">
-        <LI><a href="index.html">Home</a></LI>
-        <LI><a href="About.html">about</a></LI>
-        <LI><a href="Activities.html">activities</a></LI>
-    </Ul>
+    <ul class="ulitems">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="About.html">about</a></li>
+        <li><a href="Activities.html">activities</a></li>
+    </ul>
     <div class="container">
         <div id="quiz_wraper">
-            <H1>quize App:</H1>
-            <div id= "parent_question">   
-                <span  >What is the product of</span>
+            <h1>quize App:</h1>
+            <div id="parent_question">   
+                <span>What is the product of</span>
                 <span id="question"></span>
                 <br>
-                <label >enter your answer:</label><br>
+                <label>enter your answer:</label><br>
                 <input type="text" id="user_answer" onfocus="this.value= '' " min="10" max="100">
-                <button id="Btn_submit">submit</button>
+                <button id="btn_submit">submit</button>
+                <button id="btn_next"> Next</button><br><br> 
                 <br>
                 <br>     
             </div>
             <div id="buttons">
-                <button id="btn_Start"> Start quize</button><br><br>
-                <button id="btn_next" > Next</button><br><br> 
-                <div id="score_card">Score:<span id="scoreCard">0</span></div>
+                <button id="btn_Start"> Start</button><br><br>
+                <div id="scoreCard">Score: <span id="score">0</span></div>
             </div>
         </div>
     </div>
-    <script src="script.js"></script>
+    <script src="src/script.js"></script>
 </body>
 </html>

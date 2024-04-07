@@ -1,0 +1,12 @@
+@mixin btn-start {
+    width: 82px;
+    height: 40px;
+    background-color: $button-color; // Ensure $button-color is defined in your variables
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    &:hover {
+        background-color: darken($button-color, 10%);
+    }
+}

@@ -1,0 +1,23 @@
+# Dependency directory
+node_modules/
+
+# Environment configuration files
+.env
+
+# TypeScript compiled JavaScript output
+# Assuming your compiled JavaScript files end up in 'dist/' or similar
+dist/
+build/
+
+# Source maps (if you're generating them and don't wish to include in version control)
+*.map
+
+# IDE and editor directories
+.vscode/
+.idea/
+
+# Other common directories/files to ignore
+# Temporary files, OS-generated files, etc.
+tmp/
+*.swp
+.DS_Store

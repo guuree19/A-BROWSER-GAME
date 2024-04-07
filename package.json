@@ -1,0 +1,23 @@
+{
+  "name": "a-browser-game",
+  "version": "1.0.0",
+  "description": "first milestone Project contain:",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guuree19/A-BROWSER-GAME.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/guuree19/A-BROWSER-GAME/issues"
+  },
+  "homepage": "https://github.com/guuree19/A-BROWSER-GAME#readme",
+  "dependencies": {
+    "typescript": "^4.8.4"
+  }
+}

@@ -52,14 +52,28 @@ h1 {
 }
 
 #scoreCard {
-  position: relative;
-  left: 162px;
-  top: -30px;
-  width: 30px;
-  height: 30px;
+  position: absolute; 
+  right: 20px; 
+  bottom: 20px; 
+  width: auto; 
+  min-width: 60px; 
+  height: 40px; 
+  padding: 0 10px; 
+  line-height: 40px; 
   text-align: center;
-  background-color: rgb(242, 247, 245);
+  background-color: rgb(16, 176, 240); 
+  border-radius: 20px; 
+  color: #fff; 
+  font-size: 18px; 
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2); 
+  cursor: pointer; 
+  transition: background-color 0.3s; 
+
+  &:hover {
+    background-color: darken(rgb(16, 176, 240), 10%); 
+  }
 }
+
 
 #score_card {
   position: relative;
@@ -96,25 +110,96 @@ ul a {
 }
 
 #btn_Start {
-  width: 82px;
-  height: 40px;
+  width: 82px; /* You might consider adjusting the width or using padding instead for flexibility */
+  height: 40px; /* Height to ensure text fits well */
   position: relative;
   top: 123px;
   left: 6px;
   text-align: center;
   text-transform: uppercase;
   cursor: pointer;
+  background-color: #e90a0a; /* A strong, attention-grabbing color */
+  color: #ffffff; 
+  font-size: 16px; /* Size for readability */
+  font-weight: bold; 
+  line-height: 40px; 
+  border: none; 
+  border-radius: 5px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds depth */
+  transition: background-color 0.3s, box-shadow 0.3s; 
+
+  &:hover {
+    background-color: darken(#e90a0a, 10%); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); 
+  }
+
+  &:active {
+    background-color: darken(#e90a0a, 15%); 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+  }
 }
+.buttons-container {
+  display: flex;
+  justify-content: center; 
+  gap: 10px; 
+}
+#quiz_wraper {
+  display: flex;
+  justify-content: center; 
+  gap: 10px;
+  width: 100%;  
+}
+
+#btn_next,
+#btn_submit {
+  width: 82px; /* Adjust based on content */
+  height: 40px;
+  flex: 1; 
+  margin: 0 5px; 
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  background-color: rgb(16, 176, 240); 
+  color: #ffffff; 
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+  transition: background-color 0.3s, box-shadow 0.3s; 
+}
+
+#btn_next:hover,
+#btn_submit:hover {
+  background-color: darken(rgb(16, 176, 240), 10%); 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+}
+
+#btn_next:active,
+#btn_submit:active {
+  background-color: darken(rgb(16, 176, 240), 15%); 
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); 
+}
+
+
 
 .container {
   height: 546px;
   width: 546px;
-  align-items: center;
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center; 
   position: relative;
-  left: 330px;
+  left: 50%; 
   top: 25px;
+  transform: translateX(-50%); 
   background-color: rgb(6, 139, 95);
+  border-radius: 10px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  overflow: hidden; 
 }
+
 
 #btn_Start #btn_next #score_card {
   width: 82px;
@@ -125,17 +210,30 @@ ul a {
 }
 
 #quiz_wraper {
-  border: 2em;
-  width: 440px;
-  height: 390px;
-  position: relative;
-  left: 10px;
-  top: 87px;
-  float: none;
-  display: inline-block;
-  margin: 3em;
-  background-color: rgb(158, 153, 83);
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  gap: 20px; /* Spacing between elements */
+  padding: 20px;
+  background-color: #f3f4f6; 
+  border-radius: 8px; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  max-width: 300px; 
+  margin: auto; 
 }
+
+#user_answer {
+  width: calc(100% - 20px); 
+  padding: 6px 10px;
+  font-size: 16px;
+  border: 2px solid #cbd5e1; /* Subtle border color */
+  border-radius: 4px;
+  outline-color: rgb(16, 176, 240); /* Highlight color when focused */
+}
+#btn_next, #btn_submit, #scoreCard, #question, #user_answer {
+  display: none; /* Initially hidden */
+}
+
 
 @media screen and (max-width: 320px) {
   #quiz_wraper {
@@ -160,4 +258,4 @@ ul a {
     display: flex;
     background-color: rgb(6, 139, 95);
   }
-}/*# sourceMappingURL=style.css.map */
+}
