@@ -1,20 +1,26 @@
 # A-BROWSER-GAME
- first milestone Project contain:
+ milestone Project contain:
 
-HTML page
-styling file(css)
-javascript file(included jquery)
-
-
+Quiz App:
+Overview:
+Quiz App is an interactive web application designed to test users' arithmetic skills, specifically focusing on multiplication questions. Users are challenged to answer questions correctly in a row to win.In each wrong atempt, -1 point from the scores. The app provides immediate feedback and celebrates users' success upon achieving a streak of correct answers.
 
 
+Features:
+Random Question Generation: 
+    Each new question presents a unique multiplication challenge.
+Immediate Feedback: 
+    Users receive instant feedback on their answers.
+Winning Streak Tracking: 
+    The app tracks the user's progress towards achieving five correct answers in a row.
+Responsive Design: 
+    Ensures a seamless experience across desktop and mobile devices.
 
-outstanding work:
+Prerequisites
+Before you begin, ensure you have the following software installed on your system:
 
-needed condition to determine to answer 9 questions in a row
-
-//Sass assignment:
-needed more sass functions to use loops and simple math operations
+node.js (includes nmp)
+typeScript (can be installed globally or as a project dependency)
 
 
 
